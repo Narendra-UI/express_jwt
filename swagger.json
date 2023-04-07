@@ -1,0 +1,170 @@
+
+{
+  "openapi": "3.0.3",
+  "info": {
+          "version": "1.0.0", 
+          "title": "My employees Project CRUD",
+          "description": "My User Project Application API",
+          "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        },
+        "host": "localhost:3500",
+        "basePath": "/",
+        "schemes": ["http"],
+            "consumes": ["application/json"],
+            "produces": ["application/json"],
+            
+  "tags": [
+          {
+            "name": "employees",
+            "description": "API for employees in the system"
+          }
+        ],
+        "paths": {
+                    "/employees": {
+                      "get": {
+                        "tags": ["employees"],
+                        "summary": "Get all employees in system",
+                        "responses": {
+                          "200": {
+                            "description": "OK",
+                            "schema": {
+                              "$ref": "#/definitions/employees"
+                            }
+                          }
+                        }
+                      },
+                      "post": {
+                        "tags": ["employees"],
+                        "description": "Create new employee in system",
+                        "requestBody": {
+                          "description": "Update an existent pet in the store",
+                          "content": {
+                            "application/json": {
+                              "schema": {
+                                "$ref": "#/definitions/employees"
+                              }
+                            }
+                          }
+                        },
+                        "parameters": [
+                          {
+                            "firstname": "employee",
+                            "in": "body",
+                            "description": "employee that we want to create",
+
+                            "schema": {
+                              "$ref": "#/definitions/employees"
+                            }
+                          }
+                        ],
+                        "produces": ["application/json"],
+                        "responses": {
+                          "200": {
+                            "description": "New employee is created",
+                            "schema": {
+                              "$ref": "#/definitions/employees"
+                            }
+                          }
+                        }
+                      },
+                      "put": {
+                        "security":[
+                          {
+                            "bearerAuth":[]
+                          }
+                        ],
+                        "summary": "Update user with give ID",
+                        "tags": ["employees"],
+                        "parameters": [
+                          {
+                            "firstname": "employee",
+                            "in": "body",
+                            "description": "User with new values of properties",
+                            "schema": {
+                              "$ref": "#/definitions/updateemployees"
+                            }
+                          }
+                        ],
+          
+                        "responses": {
+                          "200": {
+                            "description": "User is updated",
+                            "schema": {
+                              "$ref": "#/definitions/employees"
+                            }
+                          }
+                        }
+                      }
+                    }
+                    },
+          
+                        
+                      
+          
+                    
+  "components": {
+    "securitySchemes": {
+      "BearerAuth":{
+      "type": "http",
+      "scheme": "bearer",
+      "in":"header"
+      }
+    }
+  },
+  "security":[
+    {
+      "BearerAuth":[]
+    }
+  ],
+  "definitions": {
+              "employees": {
+                "required": ["firstname", "lastname"],
+                "properties": {
+                  "firstname": {
+                    "type": "string"
+                  },
+                  
+                  "lastname": {
+                    "type": "string"
+                  }
+                }
+              },
+              "updateemployees":{
+                "required": ["firstname", "lastname"],
+                "properties": {
+                  "id":{
+                    "type":"integer"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  
+                  "lastname": {
+                    "type": "string"
+                  }
+                }
+              },
+              "employees":{
+                "required": ["firstname", "lastname"],
+                "properties": {
+                  "id":{
+                    "type":"integer"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  
+                  "lastname": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+}
+
+
+
+  
