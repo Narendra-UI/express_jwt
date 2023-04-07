@@ -1,0 +1,49 @@
+20230220	11:59:09	64199a8b-cf82-4816-97ff-015d78917050	SyntaxError: Unexpected non-whitespace character after JSON at position 46
+20230220	11:59:11	40232fc0-02ac-4b44-b03e-73541522a789	SyntaxError: Unexpected non-whitespace character after JSON at position 46
+20230220	11:59:55	915ef3f2-0c1c-4d0f-b924-515106bfe8f1	SyntaxError: Expected ',' or ']' after array element in JSON at position 52
+20230220	17:09:49	d7e23d3e-ce43-4e7c-9397-e50eb753cb36	SyntaxError: Expected double-quoted property name in JSON at position 17
+20230221	12:00:06	a3cf18a9-2734-49eb-b917-e109bb012b0a	Error: Cannot find module '../../controllers/employeesControler.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:03:34	0ce40de2-1aa0-46f3-a263-c876cfc6d16b	Error: Cannot find module '../../controllers/employeesControler.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:07:38	10769449-b8e3-40b4-a4d5-69d85c390a86	Error: Cannot find module '../controllers/employeesControler.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:07:39	cc66294c-ae10-4125-aa43-3e7dd925549c	Error: Cannot find module '../controllers/employeesControler.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:08:29	aec8abf6-c2c6-43b2-aadb-0828a28f722b	Error: Cannot find module '../controllers/employeesController.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:09:09	d7fe2eba-4a3b-43c8-a7e5-3d28e2e6e54c	Error: Cannot find module '../controllers/employeesController.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:09:11	1d9ae6a2-3f93-4539-8860-d4ad28bc69c1	Error: Cannot find module '../controllers/employeesController.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:09:12	5a119ad2-a1ed-49e2-9bb4-613690803de7	Error: Cannot find module '../controllers/employeesController.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	12:25:46	42260ef0-ff18-45c0-96a4-edb08a2d0f53	Error: Cannot find module '../controllers/employeesController'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	15:17:51	b4d4b3bc-afcf-47f0-862f-93d48f032651	Error: Cannot find module '../controllers/employeesController.js'
+Require stack:
+- /Users/rajanarendra/express_jwt/routes/api/employees.js
+- /Users/rajanarendra/express_jwt/server.js
+20230221	15:34:01	07f7dc98-bc38-4886-8b25-a2bde45922f1	Error: Route.put() requires a callback function but got a [object Undefined]
+20230221	15:51:36	512b1d5d-2cce-4014-a1d8-0f620042cd00	ReferenceError: Cannot access 'Employees' before initialization
+20230222	18:05:54	88aaf41d-5954-4b65-8bef-0208a718a431	ReferenceError: database is not defined
+20230302	18:22:13	8c0834a3-ce2d-4663-b52f-63e3d267151c	Error: Not allowed by CORS
+20230302	18:22:24	75b06bdf-f374-4fee-aa3d-643a02a4366a	Error: Not allowed by CORS
